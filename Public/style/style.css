@@ -1,0 +1,592 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Radley&display=swap');
+
+/*font-family: 'Inter', sans-serif; font-family: 'Radley', serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #16161A;
+    --sup-bg-color: #2D2D2E;
+    --element-bg-purple: #9F84BD;
+    --element-bg-white: #fffffe;
+}
+
+li,
+a,
+button {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.padd-150 {
+    padding: 0px 150px;
+}
+
+.section {
+    min-height: 100vh;
+    display: block;
+    opacity: 1;
+}
+
+.container {
+    padding: 100px;
+}
+
+.title {
+    color: #FFFFFE;
+    font-size: 64px;
+    font-family: 'Radley';
+}
+
+.sup-title {
+    color: #FFFFFE;
+    font-size: 36px;
+    font-family: 'Radley';
+}
+
+.info {
+    color: #94A1B2;
+    font-size: 20px;
+    font-family: 'Inter';
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ============================== HEADER Start ==============================  */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1000;
+    padding: 18px;
+    transition: all 0.4s ease;
+}
+
+nav.sticky {
+    padding: 15px 20px;
+    background: var(--sup-bg-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+nav .content {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.sticky .content .portfolio-icon .portfolio-text {
+    color: var(--element-bg-white);
+}
+
+nav .content .portfolio-icon .portfolio-text {
+    font-size: 20px;
+    font-family: 'Inter';
+    color: var(--element-bg-white);
+}
+
+nav .content .nav-links {
+    display: flex;
+}
+
+nav .content .nav-content .nav-links li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+nav .content .nav-links li a {
+    font-family: 'Inter';
+    color: var(--element-bg-white);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+}
+
+nav .content .nav-links li a:hover {
+    color: var(--element-bg-purple);
+}
+
+nav.sticky .nav-links li a {
+    color: var(--element-bg-white);
+    transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links li a:hover {
+    color: var(--element-bg-purple);
+}
+
+/* ============================== HEADER END ==============================  */
+/* ============================== HomePage Start ==============================  */
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage .homepage-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.homepage .homepage-container .welcome-info {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 440px;
+}
+
+/* ============================== HomePage END ==============================  */
+/* ============================== AboutPage START ==============================  */
+.aboutpage {
+    display: block;
+    margin-top: 50px;
+    min-height: auto;
+}
+
+.aboutpage .about {
+    display: flex;
+    margin-top: 20px;
+}
+
+.aboutpage .about .about-content {
+    width: 100%;
+    max-width: 55%;
+    flex: 0 0 55%;
+}
+
+.aboutpage .about .about-content .about-info {
+    margin-top: 25px;
+}
+
+.aboutpage .about .about-content .myinformation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.aboutpage .about .about-content .myinformation .info-item {
+    margin: 10px;
+}
+
+.aboutpage .about .profile {
+    display: flex;
+    width: 100%;
+    max-width: 45%;
+    flex: 0 0 45%;
+    justify-content: end;
+}
+
+.aboutpage .about .profile img {
+    width: 354px;
+    height: 501px;
+    object-fit: cover;
+}
+
+/* ============================== AboutPage END ==============================  */
+/* ============================== EducationPage START ==============================  */
+.education {
+    display: block;
+    margin-top: 50px;
+}
+
+.education .education-content {
+    width: 100%;
+    max-width: 100%;
+    background: var(--sup-bg-color);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black--50);
+    box-shadow: 0 0 15px rgba(237, 235, 245, 0.15);
+    border-radius: 10px;
+    position: relative;
+}
+
+.education .education-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.education .education-content .timeline .timeline-item .items:hover {
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+}
+
+.education .education-content .timeline .timeline-item .item:last-child {
+    padding-bottom: 0;
+}
+
+.education .education-content .timeline .timeline-item:before {
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--element-bg-white);
+}
+
+.education .education-content .timeline .timeline-item .items {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+}
+
+.education .education-content .timeline .timeline-item .items .enducation-info {
+    flex: 0 0 70%;
+    width: 100%;
+    max-width: 70%;
+}
+
+.education .education-content .timeline .timeline-item .items .school-logo {
+    display: flex;
+    flex: 0 0 30%;
+    width: 100%;
+    max-width: 30%;
+    justify-content: center;
+}
+
+.education .education-content .timeline .timeline-item img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 3px solid var(--element-bg-white);
+    border-radius: 100%;
+    box-shadow: 0 0 25px rgba(254, 254, 254, 0.15);
+}
+
+.education .education-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--element-bg-white);
+}
+
+.education .education-content .timeline .timeline-grade {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--element-bg-white);
+}
+
+.education .education-content .timeline .timeline-grade i {
+    margin-right: 8px;
+}
+
+.education .education-content .timeline .timeline-grade span {
+    font-size: 15px;
+}
+
+.education .education-content .timeline .timeline-title {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--element-bg-white);
+}
+
+.education .education-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-transform: justify;
+    color: var(--element-bg-white);
+}
+
+/* ============================== EducationPage END ==============================  */
+/* ============================== Activity Start ==============================  */
+.activity {
+    display: block;
+    margin-top: 50px;
+}
+
+.activity .activity-container .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    min-height: 380px;
+    padding: 20px 0;
+}
+
+.activity .activity-container .items .image-content {
+    flex: 0 0 50%;
+    width: 100%;
+    max-width: 50%;
+    justify-content: center;
+}
+
+.activity .activity-container .items .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.activity .activity-container .items .info-content {
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%;
+    width: 100%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+
+.activity .activity-container .items .info-content .info-container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.activity .activity-container .items .info-content .info-container .project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    cursor: pointer;
+}
+
+.activity .activity-container .items .info-content .info-container .project-title .title {
+    font-size: 25px;
+}
+
+.activity .activity-container .items .info-content .info-container .project-title .category {
+    color: var(--element-bg-purple);
+    text-shadow: 0 0 15px var(--element-bg-purple)
+}
+
+
+
+.activity .activity-container .items .info-content .info-container .title .project:hover {
+    color: var(--element-bg-purple);
+    text-shadow: 0 0 10px var(--element-bg-purple)
+}
+
+.activity .activity-container .items .info-content .info-container .project-content {
+    width: 100%;
+    margin: 25px 0;
+    background-color: var(--sup-bg-color);
+    padding: 15px;
+}
+
+.activity .activity-container .items .info-content .info-container .project-content span {
+    color: var(--element-bg-purple);
+}
+
+.item-footer p {
+    color: var(--element-bg-white);
+    line-height: 1.5;
+}
+
+.item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.item-footer p {
+    margin: 0 10px;
+}
+
+.item-footer p:last-child {
+    margin: 0;
+}
+
+/* ============================== Activity END ==============================  */
+/* ============================== Certificate Start ==============================  */
+.certificate {
+    margin-top: 50px;
+}
+
+.certificate .certificate-container {
+    padding: 30px 10px;
+}
+
+.certificate .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate .certificate-item {
+    flex: 0 0 30.33%;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 10px;
+}
+
+.certificate .certificate-item-inner {
+    border: 6px solid var(--sup-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.certificate .certificate-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--element-bg-purple);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.certificate .certificate-item-inner p {
+    font-size: 16px;
+    color: var(--element-bg-white);
+    line-height: 25px;
+    text-align: center;
+}
+
+.certificate .certificate-item-inner .certificate-img img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* ============================== Certificate END ==============================  */
+/* ============================== Footer start ==============================  */
+.footer {
+    display: block;
+    padding: 15px;
+    height: 100%;
+    max-height: 3000px;
+    background-color: var(--sup-bg-color);
+}
+
+.footer p {
+    font-size: 16px;
+    color: var(--element-bg-white);
+}
+
+.footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer .content .footer-logo {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 25%;
+}
+
+.footer .content .special-thanks {
+    flex: 0 0 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .content .social-media {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 25%;
+    text-align: end;
+}
+
+.footer .content .social-media .items {
+    display: flex;
+    padding: 15px 0;
+    justify-content: end;
+}
+
+.footer .content .social-media .items .icon {
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.footer .content .social-media .items i:hover {
+    color: var(--element-bg-purple);
+}
+
+.footer .content .social-media .items i {
+    color: var(--element-bg-white);
+}
+
+.footer .content .social-media .items .icon:last-child {
+    margin-right: 0;
+}
+
+/* ============================== Footer End ==============================  */
+
+
+@media screen and (max-width: 800px) {
+    .padd-150 {
+        padding: 0px 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .sup-title {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .homepage {
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        min-height: auto;
+        margin-top: 100px;
+    }
+
+    .homepage .homepage-container .welcome-info {
+        max-width: 100%;
+    }
+
+    .aboutpage .about .about-content,
+    .activity .activity-container .items .info-content,
+    .certificate .certificate-item {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    nav .content .nav-links,
+    .aboutpage .about .profile,
+    .activity .activity-container .items .image-content,
+    .footer .content .special-thanks {
+        display: none;
+    }
+
+    .activity .activity-container .items {
+        border-radius: 15px;
+        margin: 15px 0;
+        background-color: var(--sup-bg-color);
+    }
+
+    .activity .activity-container .items .info-content .info-container .project-title {
+        align-items: start;
+    }
+
+    .footer .content .social-media,
+    .footer .content .footer-logo {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
