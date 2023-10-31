@@ -525,8 +525,7 @@ nav.sticky .nav-links li a:hover {
 }
 
 /* ============================== Footer End ==============================  */
-
-
+/* ============================== Responsive  ==============================  */
 @media screen and (max-width: 800px) {
     .padd-150 {
         padding: 0px 10px;
@@ -589,4 +588,21 @@ nav.sticky .nav-links li a:hover {
         flex: 0 0 50%;
         max-width: 50%;
     }
+}
+/* ============================== Custom scrollbar  ==============================  */
+body::-webkit-scrollbar-track
+{
+	background-color: var(--main-bg-color);
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px var(--sup-bg-color);
+	background-color: var(--main-bg-color);
 }
