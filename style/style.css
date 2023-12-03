@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --main-bg-color: #16161A;
     --sup-bg-color: #2D2D2E;
@@ -24,6 +25,10 @@ button {
 
 body {
     background-color: var(--main-bg-color);
+}
+
+main {
+    overflow: hidden;
 }
 
 .padd-150 {
@@ -245,7 +250,7 @@ nav.sticky .nav-links li a:hover {
     padding: 5px 10px;
 }
 
-.education .education-content .timeline .timeline-item .items .enducation-info {
+.education .education-content .timeline .timeline-item .items .education-info {
     flex: 0 0 70%;
     width: 100%;
     max-width: 70%;
@@ -525,7 +530,7 @@ nav.sticky .nav-links li a:hover {
 }
 
 /* ============================== Footer End ==============================  */
-/* ============================== Responsive  ==============================  */
+/* ============================== Responsive screen  ==============================  */
 @media screen and (max-width: 800px) {
     .padd-150 {
         padding: 0px 10px;
@@ -603,6 +608,5 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px var(--sup-bg-color);
-	background-color: var(--main-bg-color);
+	background-color: var(--sup-bg-color);
 }
